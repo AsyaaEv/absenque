@@ -4,7 +4,7 @@ import axios from "axios"
 
 export const NewAbsenSiswa = ({onSuccess, onError}: any) => {
     const axiosInstance = axios.create({
-        baseURL: "http://localhost:8000/api"
+        baseURL: "https://absenque.tripleer.my.id/api"
     })
     return useMutation({
         mutationFn: async(body: any) => {
