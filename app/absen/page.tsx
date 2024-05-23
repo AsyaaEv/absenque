@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/select";
 import { useFormik } from "formik";
 import { CircleCheckBigIcon, Loader2, Send, XCircle } from "lucide-react";
-import { NewAbsenSiswa } from "../constructiuon/absen/NewAbsenSiswa";
+import { NewAbsenSiswa } from "../constructiuon/absen/newAbsenSiswa";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {

@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { FileUpIcon } from "lucide-react";
 import * as XLSX from "xlsx";
-import { GetAbsenSiswa } from "../constructiuon/absen/GetAbsenSiswa";
+import { GetAbsenSiswa } from "../constructiuon/absen/getAbsenSiswa";
 
 export default function Admin() {
     const { isFetching, data } = GetAbsenSiswa();
