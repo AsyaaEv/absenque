@@ -2,7 +2,7 @@ import { useMutation } from "@tanstack/react-query"
 import axios from "axios"
 
 
-export const newAbsenSiswa = ({onSuccess, onError}: any) => {
+export const NewAbsenSiswa = ({onSuccess, onError}: any) => {
     const axiosInstance = axios.create({
         baseURL: "http://localhost:3000/api"
     })

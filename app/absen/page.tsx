@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/select";
 import { useFormik } from "formik";
 import { CircleCheckBigIcon, Loader2, Send, XCircle } from "lucide-react";
-import { newAbsenSiswa } from "../constructiuon/absen/newAbsenSiswa";
+import { NewAbsenSiswa } from "../constructiuon/absen/newAbsenSiswa";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
@@ -59,7 +59,7 @@ export default function Absen() {
   const [error, setError] = useState(false);
   const [open, setOpen] = useState(false);
   const { mutate: AbsenSiswa, isPending: newAbsenSiswaIsLoading } =
-    newAbsenSiswa({
+    NewAbsenSiswa({
       onSuccess: () => {
         setOpen(true);
       },

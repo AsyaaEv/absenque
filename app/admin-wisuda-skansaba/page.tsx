@@ -1,11 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { FileUpIcon } from "lucide-react";
-import { getAbsenSiswa } from "../constructiuon/absen/getAbsenSiswa";
 import * as XLSX from "xlsx";
+import { GetAbsenSiswa } from "../constructiuon/absen/getAbsenSiswa";
 
 export default function Admin() {
-    const { isFetching, data } = getAbsenSiswa();
+    const { isFetching, data } = GetAbsenSiswa();
     const handleExport = async() => {
         const dataToExport = data.map((pro: any) => ({
             nama: pro.nama,

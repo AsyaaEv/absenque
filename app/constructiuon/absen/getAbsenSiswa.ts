@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query"
 import axios from "axios"
 
 
-export const getAbsenSiswa = () => {
+export const GetAbsenSiswa = () => {
     const axiosInstance = axios.create({
         baseURL: "http://localhost:3000/api"
     })
